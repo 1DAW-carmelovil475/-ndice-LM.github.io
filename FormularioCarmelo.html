@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="text-align: center;">FORMULARIO CURRICULUM VITAE</title>
+    <gr>
+</head>
+<body>
+    <table style="border: 3; " align="center" style="background-color: #c1b581ce;"> 
+        <form action="mailto:micorreo@este.es" method="post" enctype="text/plain">
+            <h1 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">FORMULARIO  CURRICULUM  VITAE</h1><hr>
+            <td style="padding: 50px; vertical-align: top;" ><h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">DATOS PERSONALES</h3>
+                <p><label for="nombre">Nombre </label></p>
+                <input type="text" id="nombre" name="nombre" size="30" maxlength="30"/></p>
+                <p><label for="apellidos">Apellidos </label></p>
+                <input type="text" id="apellidos" name="apellidos" size="30" maxlength="30"/></p>
+                <p><label for="dirección">Dirección </label></p>
+                <input type="text" id="dirección" name="dirección" size="30" maxlength="30"/></p>
+                <p><label for="Teléfono">Teléfono </label></p>
+                <input type="text" id="Teléfono" name="Teléfono" size="30" maxlength="30"/></p>
+                <p><label for="correo">Correo </label></p>
+                <input type="text" id="correo" name="correo" size="30" maxlength="30"/></p>
+                <p><label for="">Pon una foto </label></p>
+                <input type="file" name="imagen1"/>
+                <br><br><hr>
+                <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">DATOS ACADÉMICOS</h3>
+                <p>
+                    <input type="checkbox" id="primaria" name="primaria">
+                    <label for="primaria"> ED.Primaria</label><br/>
+                    <input type="checkbox" id="secundaria" name="secundaria">
+                    <label for="secundaria">ESO</label><br/>
+                    <input type="checkbox" id="CFDM" name="CFGM">
+                    <label for="CFGM">CFGM</label><br/>
+                    <input type="checkbox" id="CFGS" name="CFGS">
+                    <label for="CFGS"> CFGS</label><br/>
+                    <input type="checkbox" id="universidad" name="universidad">
+                    <label for="universidad">EDUCACIÓN UNIVERSITARIA</label><br/>
+                    <input type="checkbox" id="master" name="master">
+                    <label for="master">MÁSTER POST-GRADO</label><br/>
+                </p>
+            </td>
+            <td style="padding: 50px; vertical-align: top;"><h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">EXPERIENCIA PROFESIONAL</h3>
+                <p><label for="trabajo">¿En qué has trabajado?</label></p>
+                <select id="trabajo" name="trabajo">
+                <option>Hostelería</option>
+                <option>Informática</option>
+                <option>Clases Particulares</option>
+                <option>Vendedor</option>
+                <option>Dependiente de comercio</option>
+                </select>
+                <br><br><hr>
+                <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">IDIOMAS</h3>
+                <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Inglés</h4>
+                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Nivel hablado</p>
+                <p>
+                    <input type="radio" id="Alto" name="so" value="Alto" checked="checked">
+                    <label for="Alto">Alto</label>
+                    <input type="radio" id="Medio" name="so" value="Medio">
+                    <label for="Medio">Medio</label>
+                    <input type="radio" id="Bajo" name="so" value="Bajo">
+                    <label for="Bajo">Bajo</label>
+                </p>
+                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Nivel escrito</p>
+                <p>
+                    <input type="radio" id="Alto" name="as" value="Alto" checked="checked">
+                    <label for="Alto">Alto</label>
+                    <input type="radio" id="Medio" name="as" value="Medio">
+                    <label for="Medio">Medio</label>
+                    <input type="radio" id="Bajo" name="as" value="Bajo">
+                    <label for="Bajo">Bajo</label>
+                </p>
+                <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Francés</h4>
+                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Nivel hablado</p>
+                <p>
+                    <input type="radio" id="Alto" name="eo" value="Alto" checked="checked">
+                    <label for="Alto">Alto </label>
+                    <input type="radio" id="Medio" name="eo" value="Medio">
+                    <label for="Medio">Medio </label>
+                    <input type="radio" id="Bajo" name="eo" value="Bajo">
+                    <label for="Bajo">Bajo </label>
+                </p>
+                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Nivel escrito</p>
+                <p>
+                    <input type="radio" id="Alto" name="po" value="Alto" checked="checked">
+                    <label for="Alto">Alto </label>
+                    <input type="radio" id="Medio" name="po" value="Medio">
+                    <label for="Medio">Medio </label>
+                    <input type="radio" id="Bajo" name="po" value="Bajo">
+                    <label for="Bajo">Bajo </label>
+                </p>
+                <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Alemán</h4>
+                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Nivel hablado</p>
+                <p>
+                    <input type="radio" id="Alto" name="lo" value="Alto" checked="checked">
+                    <label for="Alto">Alto</label>
+                    <input type="radio" id="Medio" name="lo" value="Medio">
+                    <label for="Medio">Medio</label>
+                    <input type="radio" id="Bajo" name="lo" value="Bajo">
+                    <label for="Bajo">Bajo</label>
+                </p>
+                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Nivel escrito</p>
+                <p>
+                    <input type="radio" id="Alto" name="ko" value="Alto" checked="checked">
+                    <label for="Alto">Alto</label>
+                    <input type="radio" id="Medio" name="ko" value="Medio">
+                    <label for="Medio">Medio</label>
+                    <input type="radio" id="Bajo" name="ko" value="Bajo">
+                    <label for="Bajo">Bajo</label>
+                </p>
+            </td>
+            <td style="padding: 50px; vertical-align: top;"><h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" align="">APTITUDES PERSONALES</h3>
+                <label for="comentario" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">¿Por qué piensas que debes de ser elegido para este puesto de trabajo?</label><br>
+                <br><textarea id="comentario" name="comentario" rows="3" cols="40"></textarea>
+                <br><br><hr>
+                <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">ENVIAR FORMULARIO</h3>
+                <input type="submit"value="enviar formulario">
+                <input type="reset" value="borrar datos">
+            </td>
+        </form>
+    </table>
+</body>
+</html>
