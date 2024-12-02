@@ -1,65 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tarea 14. Iframes</title>
-        <style>
-            #h1{
-                text-align: center;
-                color: black;
-                background-color: white;
-            }
-            h1:active {
-                background-color: green;
-                color: white;
-                transform: scale(1.3);
-            }
-            .container {
-              display: flex;
-              gap: 20px; 
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 14. Iframes</title>
+     <style>
+        #h1{
+            text-align: center;
+            color: black;
+            background-color: white;
+        }
+        h1:active {
+            background-color: green;
+            color: white;
+            transform: scale(1.3);
+        }
+        .container {
+            display: flex;
+            gap: 20px; 
+        }
     
        
-            .box {
-                background-color: black;
-              color: white;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              border-radius: 10px;
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-              font-size: 1.2em;
-              text-align: center;
-            }  
-        </style>
-    </head>
-    <body>
-        <h1 style="text-align: center;">Tarea Iframes</h1>
-        
-       
-        <div class="container">
-            <div class="box">
-                <h3 style="top: auto; text-align: center;">Video de YouTube</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9biuGQakVjE?si=45Mk0Hv3h-andbZy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="box">
-                <h3>Imagen</h3>
-                <p><a href="https://commons.wikimedia.org/wiki/File:Betiscoparey2022.jpg#/media/Archivo:Betiscoparey2022.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Betiscoparey2022.jpg" alt="Betiscoparey2022.jpg" height="1165" width="1748"></a><br>- <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/juntainforma/52029659846/">https://www.flickr.com/photos/juntainforma/52029659846/</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0" title="Creative Commons Attribution-Share Alike 2.0">CC BY-SA 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=118628850">Enlace</a></p></body>
-                <br>
-            </div>
+        .box {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.2em;
+            text-align: center;
+        }  
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Tarea Iframes</h1>
+    <div class="container">
+        <div class="box">
+            <h3 style="top: auto; text-align: center;">Video de YouTube</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9biuGQakVjE?si=45Mk0Hv3h-andbZy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <br>
-        <div class="container">
-            <div class="box">
-                <h3>Audio</h3>
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1865052033&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/lord_piero" title="lord_piero" target="_blank" style="color: #cccccc; text-decoration: none;">lord_piero</a> · <a href="https://soundcloud.com/lord_piero/6-27-wav" title="6.27.wav" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
-                <br>
-            </div>
-            <div class="box">
-                <h3>Lionel Messi</h3>
-                <p><a href="https://commons.wikimedia.org/wiki/File:Lionel-Messi-Argentina-2022-FIFA-World-Cup_(cropped).jpg#/media/Archivo:Lionel-Messi-Argentina-2022-FIFA-World-Cup_(cropped).jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg" alt="Lionel-Messi-Argentina-2022-FIFA-World-Cup (cropped).jpg" height="486" width="364"></a><br><a href="https://creativecommons.org/licenses/by/4.0" title="Creative Commons Attribution 4.0"></a>, <a href="https://commons.wikimedia.org/w/index.php?curid=126494101"></a></p>    
-            </div>
+        <div class="box">
+            <h3>Imagen</h3>
+            <p><a href="https://commons.wikimedia.org/wiki/File:Betiscoparey2022.jpg#/media/Archivo:Betiscoparey2022.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Betiscoparey2022.jpg" alt="Betiscoparey2022.jpg" height="1165" width="1748"></a><br>- <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/juntainforma/52029659846/">https://www.flickr.com/photos/juntainforma/52029659846/</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0" title="Creative Commons Attribution-Share Alike 2.0">CC BY-SA 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=118628850">Enlace</a></p></body>
+            <br>
         </div>
-    </body>       
+    </div>
+    <br>
+    <div class="container">
+        <div class="box">
+            <h3>Audio</h3>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1865052033&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/lord_piero" title="lord_piero" target="_blank" style="color: #cccccc; text-decoration: none;">lord_piero</a> · <a href="https://soundcloud.com/lord_piero/6-27-wav" title="6.27.wav" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+            <br>
+        </div>
+        <div class="box">
+            <h3>Lionel Messi</h3>
+            <p><a href="https://commons.wikimedia.org/wiki/File:Lionel-Messi-Argentina-2022-FIFA-World-Cup_(cropped).jpg#/media/Archivo:Lionel-Messi-Argentina-2022-FIFA-World-Cup_(cropped).jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg" alt="Lionel-Messi-Argentina-2022-FIFA-World-Cup (cropped).jpg" height="486" width="364"></a><br><a href="https://creativecommons.org/licenses/by/4.0" title="Creative Commons Attribution 4.0"></a>, <a href="https://commons.wikimedia.org/w/index.php?curid=126494101"></a></p>    
+        </div>
+    </div>
+</body>       
 </html>
