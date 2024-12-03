@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Formularios</title>
+    <style>
+        input { 
+            width: fit-content;
+            padding: 10px; 
+            margin-bottom: 10px;
+            box-sizing: border-box; 
+        }
+        * { 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .formulario {
+            display: flex;
+        }
+        .columna {
+            flex: 1;
+            padding: 10px;
+        }
+        .columna-izquierda {
+            background-color: rgb(255, 144, 227);
+        }
+        .columna-derecha {
+            background-color: rgb(139, 255, 174);
+        }
+        .miweb{
+            background-color: rgb(255, 183, 135);
+        }
+        .multiple{
+            background-color: rgb(255, 107, 107);
+        }
+
+        .radio{
+            background-color: rgb(69, 161, 100);
+        }
+
+        .lineas{
+            background-color: rgb(113, 82, 226);
+            animation: anilineas 4s;
+        }
+
+        .desplegable{
+            background-color: rgb(202, 223, 128);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        a { 
+            color: blue; 
+            display: inline-block; 
+            transition: transform 0.3s ease-in-out, 0.3s ease-in-out;
+        } 
+        a:hover { 
+            transform: scale(1.2);
+        } 
+       
+        .rotar {
+            transform: rotate(20deg);
+            display: inline-block;
+        }
+        @keyframes anilineas {
+            from {background-color: rgb(226, 82, 154);}
+            to {background-color: rgb(253, 255, 127);} 
+        }
+    </style>
+</head>
+<body>
+    <h2 style="background-color: aquamarine;">Formulario</h2>
+
+    <div class="formulario">
+        <div class="columna columna-izquierda">
+            <form action="mailto:micorreo@este.es" method="post" enctype="text/plain">
+                <p><label for="apellidos">Escribe tu nombre </label></p>
+                <input type="text" id="apellidos" name="apellidos" size="30" maxlength="30"/>
+                <p><label for="contrasena">Escribe tu contraseña </label></p>
+                <input type="password" id="contrasena" name="contrasena" size="10" maxlength="10"/>
+                <p><label for="correo">Correo </label></p>
+                <input type="email" placeholder="Es necesario un @" id="correo" name="correo" size="30" maxlength="30"/></p>
+                <p><label for="calle">Calle</label></p>
+                <input type="text" id="calle" name="calle" size="10"/>
+                <p><label for="num">Número</label></p>
+                <input type="text" id="num" name="num" size="10"/>
+                <p><label for="piso">Piso</label></p>
+                <input type="text" id="piso" name="piso" size="10"/>
+                <p><label for="letra">Letra</label></p>
+                <input type="text" id="letra" name="letra" size="10"/>
+                <p><label for="provincia">Provincia</label></p>
+                <input type="text" id="provincia" name="provincia" size="10"/>
+                <p><label for="cp">Código Postal</label></p>
+                <input type="text" id="cp" name="cp" size="10"/>
+            </form>
+        </div>
+
+        <div class="columna columna-derecha">
+
+            <div class="multiple">
+            <h3>¿En qué has trabajado?</h3>
+            <p>
+                <input type="checkbox" id="Hostelería" name="Hostelería"/>
+                <label for="Hostelería">Hostelería</label><br/>
+                <input type="checkbox" id="Informática" name="Informática"/>
+                <label for="Informática">Informática</label><br/>
+                <input type="checkbox" id="otro" name="otro"/>
+                <label for="otro">otro</label><br/>
+            </p>
+            </div>
+
+            <div class="lineas">
+            <h3>COMENTA MI FORMULARIO</h3>
+            <p><label for="comentario">Escribe tu comentario sobre mi formulario</label></p>
+            <p>
+                <textarea id="comentario" name="comentario" rows="3" cols="40"></textarea>
+            </p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="desplegable">
+            <h3 class="rotar"><label for="estudios">¿QUÉ ESTUDIAS</label></h3>
+            <select id="estudios" name="estudios">
+                <option>Ed. Primaria</option>
+                <option>Secundaria</option>
+                <option>Bachillerato</option>
+                <option>CFGM</option>
+                <option>CFGS</option>
+                <option>Universidad</option>
+            </select>
+            <br><br>
+            <table>
+                <h3>IDIOMAS</h3>
+                <tr>
+                    <th>Idioma</th>
+                    <th>Nivel escrito</th>
+                    <th>Nivel hablado</th>
+                </tr>
+                <tr>
+                    <td>Inglés</td>
+                    <td>
+                        <select name="idiomasopciones">
+                            <option value="alto">ALTO</option>
+                            <option value="medio">MEDIO</option>
+                            <option value="bajo">BAJO</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="idiomasopciones">
+                            <option value="alto">ALTO</option>
+                            <option value="medio">MEDIO</option>
+                            <option value="bajo">BAJO</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Francés</td>
+                    <td>
+                        <select name="idiomasopciones">
+                            <option value="alto">ALTO</option>
+                            <option value="medio">MEDIO</option>
+                            <option value="bajo">BAJO</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="idiomasopciones">
+                            <option value="alto">ALTO</option>
+                            <option value="medio">MEDIO</option>
+                            <option value="bajo">BAJO</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alemán</td>
+                    <td>
+                        <select name="idiomasopciones">
+                            <option value="alto">ALTO</option>
+                            <option value="medio">MEDIO</option>
+                            <option value="bajo">BAJO</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="idiomasopciones">
+                            <option value="alto">ALTO</option>
+                            <option value="medio">MEDIO</option>
+                            <option value="bajo">BAJO</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Otro Idioma | <input type="text" id="nuevo_idioma" name="nuevo_idioma" size="30" maxlength="30"/></td>
+                    <td>
+                        <select name="idiomasopciones">
+                            <option value="alto">ALTO</option>
+                            <option value="medio">MEDIO</option>
+                            <option value="bajo">BAJO</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="idiomasopciones">
+                            <option value="alto">ALTO</option>
+                            <option value="medio">MEDIO</option>
+                            <option value="bajo">BAJO</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <div class="miweb">
+                <h2>Mi página web</h2>
+                <a href="https://1daw-carmelovil475.github.io/-ndice-LM.github.io/" target="about:blank" class="zoom">Este es mi sitio web</a>
+            </div>
+            <br>
+            <div class="botones">
+
+                <h3>BOTONES DE ENVIO Y BORRADO</h3>
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Borrar datos">
+            </div>    
+        </div>
+        </form>
+    </div>
+</body>
+</html>
