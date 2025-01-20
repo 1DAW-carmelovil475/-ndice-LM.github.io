@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entradas F1</title>
+    <style>
+       body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        .menu-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            z-index: 1000;
+        }
+
+        .menu-bar img {
+            height: 35px;
+        }
+
+        .form-container {
+            display: flex;
+            width: 600px;
+            margin: auto;
+            background: grey;
+            padding: 10px;
+            border: 1px solid red;
+            color: black;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label, input, select, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        button {
+            background: gray;
+            color: black;
+            border: 1px solid black;
+        }
+        select, input {
+            padding: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="https://logos-world.net/wp-content/uploads/2023/12/F1-Logo.png" alt="F1 Logo">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <br><br><br><br>
+    <h2>Comprar Entradas</h2>
+    <div class="form-container">
+        
+        <div class="column">
+            
+            <form action="#" method="POST">
+                <label>Nombre:</label>
+                <input type="text" required>
+
+                <label>DNI:</label>
+                <input type="text" required>
+                
+                <label>Correo:</label>
+                <input type="email" name="email" required placeholder="ejemplo@dominio.com">
+                
+                <label>Dirección:</label>
+                <input type="text" required>
+                
+                <label>Provincia:</label>
+                <input type="text" required>
+                
+                <label>País:</label>
+                <input type="text" required>
+            
+            </form>
+        </div>
+        <div class="column">
+           
+            <form action="#" method="POST">
+                <label>Cantidad:</label>
+                <input type="number" required>
+                
+                <label>Entrada para Niño:</label>
+                <select required>
+                    <option value="Nada">Nada</option>
+                    <option value="General">General-30€</option>
+                    <option value="VIP">VIP-60€</option>
+                    <option value="Premium">Premium-100€</option>
+                </select>
+                
+                <label>Entrada para Adulto:</label>
+                <select required>
+                    <option value="Nada">Nada</option>
+                    <option value="General">General-50€</option>
+                    <option value="VIP">VIP-100€</option>
+                    <option value="Premium">Premium-150€</option>
+                </select>
+                
+                <label>Gran Premio:</label>
+                <select required>
+                    <option>Australia</option>
+                    <option>China</option>
+                    <option>Japón</option>
+                    <option>Bahrein</option>
+                    <option>Arabia Saudita</option>
+                    <option>Miami</option>
+                    <option>Imola</option>
+                    <option>Mónaco</option>
+                    <option>España</option>
+                    <option>Canadá</option>
+                    <option>Austria</option>
+                    <option>Gran Bretaña</option>
+                    <option>Bélgica</option>
+                    <option>Hungría</option>
+                    <option>Paises Bajos</option>
+                    <option>Monza</option>
+                    <option>Azerbaiyán</option>
+                    <option>Singapur</option>
+                    <option>Austín</option>
+                    <option>México</option>
+                    <option>Brasil</option>
+                    <option>Las Vegas</option>
+                    <option>Qatar</option>
+                    <option>Abu Dabi</option>
+                </select>
+                
+                <button type="submit">Comprar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

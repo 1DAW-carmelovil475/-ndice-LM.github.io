@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trofeos de la Fórmula 1</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+      
+        .menu-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .menu-bar img {
+            height: 35px;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .trophy {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+            border: 1px solid red;
+        }
+        
+        .trophy:hover {
+            transform: scale(1.05);
+        }
+        
+        .trophy img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <div class="menu-bar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="https://logos-world.net/wp-content/uploads/2023/12/F1-Logo.png" alt="F1 Logo">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <br><br><br>
+    <div class="container">
+        <div class="trophy">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Drivers%27_World_Championship_trophy_2004_replica_front1_2019_Michael_Schumacher_Private_Collection.jpg" alt="Trofeo Campeonato Mundial">
+            <h2>Trofeo del Campeonato Mundial</h2>
+            <p>Otorgado al piloto con más puntos al final de la temporada.</p>
+        </div>
+        
+        <div class="trophy">
+            <img src="https://preview.redd.it/rmnbfh95tp481.jpg?auto=webp&s=dd9011e285f8ef1607f07d15b9d44e6d261289c7" alt="Trofeo de Constructores">
+            <h2>Trofeo de Constructores</h2>
+            <p>Entregado a la escudería con el mayor puntaje en la temporada.</p>
+        </div>
+        
+        <div class="trophy">
+            <img src="https://media.revistagq.com/photos/6294c4adfee73e0bb751fe9b/master/w_1600%2Cc_limit/Louis_Vuitton_Monaco_F1.jpg" alt="Trofeo GP de Mónaco">
+            <h2>Trofeo del Gran Premio de Mónaco</h2>
+            <p>Es el premio de carrera más prestigioso de la historia de la Fórmula 1.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

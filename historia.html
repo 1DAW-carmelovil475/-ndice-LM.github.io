@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Destacados</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+      
+        .menu-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .menu-bar img {
+            height: 35px;
+        }
+        
+        .content {
+            margin-top: 80px; /* Espacio para que los divs no queden debajo del menú */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .container > div {
+            padding: 10px;
+            border: 1px solid black;
+            margin: 10px;
+            text-align: center;
+            border-radius: 15px;
+            width: 30%;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: white;
+        }
+
+        .container > div > div {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        ul {
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        .container > div:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="https://logos-world.net/wp-content/uploads/2023/12/F1-Logo.png" alt="F1 Logo">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="content">
+        <div class="container">
+            <div>
+                <div>Pilotos más destacados</div>
+                <ul>
+                    <li>Michael Schumacher (7 veces Campeón del Mundo)</li>
+                    <li>Lewis Hamilton (7 veces Campeón del Mundo)</li>
+                    <li>Juan Manuel Fangio (5 veces Campeón del Mundo)</li>
+                    <li>Max Verstappen (4 veces Campeón del Mundo)</li>
+                    <li>Sebastian Vettel (4 veces Campeón del Mundo)</li>                              
+                </ul>
+            </div>
+            
+            <div>
+                <div>Escuderías más destacadas</div>
+                <ul>
+                    <li>Ferrari (16 veces Campeón de Constructores)</li>
+                    <li>McLaren (9 veces Campeón de Constructores)</li>
+                    <li>Williams (9 veces Campeón de Constructores)</li>
+                    <li>Mercedes (8 veces Campeón de Constructores)</li>
+                    <li>Red Bull Racing (8 veces Campeón de Constructores)</li>
+                </ul>
+            </div>
+            
+            <div>
+                <div>Circuitos más destacados</div>
+                <ul>
+                    <li>Circuito de Mónaco</li>
+                    <li>Silverstone (Gran Bretaña)</li>
+                    <li>Monza (Italia)</li>
+                    <li>Spa-Francorchamps (Bélgica)</li>
+                    <li>Interlagos (Brasil)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
